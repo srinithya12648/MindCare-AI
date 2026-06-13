@@ -4,6 +4,7 @@ import os
 
 # Gemini API Key
 genai.configure(api_key=st.secrets["GEMINI_API_KEY"])
+st.write("Secret loaded:", "GEMINI_API_KEY" in st.secrets)
 
 model = genai.GenerativeModel("gemini-2.5-flash")
 
